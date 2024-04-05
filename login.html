@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - G.A. Corporation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .input-field {
+            margin: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 300px;
+            box-sizing: border-box;
+        }
+        .button {
+            margin: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Login</h1>
+    <form id="login-form" onsubmit="return login()">
+        <input type="text" id="username" class="input-field" placeholder="Username" required><br>
+        <input type="password" id="password" class="input-field" placeholder="Password" required><br>
+        <button type="submit" class="button">Login</button>
+        <div id="error-message" class="error-message"></div>
+    </form>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
